@@ -29,12 +29,17 @@ url_one = driver.current_url
 print(url_one)
 item_one_ele.click()
 
+# gathering information
+# item two name
 item_two = driver.find_element(By.CLASS_NAME, 'inventory_details_name').text
 print(item_two)
+# description of item two
 desc_two = driver.find_element(By.CLASS_NAME, 'inventory_details_desc').text
 print(desc_two)
+# price of item two
 price_two = driver.find_element(By.CLASS_NAME, 'inventory_details_price').text
 print(price_two)
+# checking the url
 url_two = driver.current_url
 print(url_two)
 
